@@ -1,9 +1,9 @@
 .weather__general__container{
-    padding: 0.5rem;
+    padding: 1rem;
     width: 100%;
     height: 100%;
     display: flex;
-   justify-content: space-around;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -43,7 +43,6 @@
     border: none;
     text-align: left;
     padding-left: 0.60rem;
-    line-height: 55px;
     font-size: 0.95rem;
     font-family: 'Lato', sans-serif;
     outline: none;
