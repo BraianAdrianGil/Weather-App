@@ -66,6 +66,13 @@
 .weather__form__container form button.dark__mode{
     color: white;
 }
+.btn__general__slider__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 100%;
+}
 .btn__slider__container{
     width: 42px;
     height: 20px;

@@ -75,17 +75,22 @@ const WeatherCard = () => {
                 </button>
               </form>
             </div>
-            <button
-              className={`btn__slider__container ${
-                isDarkMode ? "dark__mode" : " "
-              }`}
+            <div
+              className="btn__general__slider__container"
               onClick={toggleTheme}
             >
-              <div
-                className={`btn__slider ${isDarkMode ? "dark__mode" : ""}`}
+              <button
+                className={`btn__slider__container ${
+                  isDarkMode ? "dark__mode" : " "
+                }`}
                 onClick={toggleTheme}
-              ></div>
-            </button>
+              >
+                <div
+                  className={`btn__slider ${isDarkMode ? "dark__mode" : ""}`}
+                  onClick={toggleTheme}
+                ></div>
+              </button>
+            </div>
           </div>
           <h2>
             {weather.city}, {weather.country}
