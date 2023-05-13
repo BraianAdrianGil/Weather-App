@@ -11,8 +11,6 @@ export const getCurrentWeather = async (latitude, longitude) => {
       lon: longitude,
       appid: import.meta.env.VITE_OPENWEATHER_API_KEY,
     };
-    // ddf8847a11fbf86481b0b7324b6d2400",
-    // appid: "283f32beb215c0db85bfd23784a36be3",
 
     const res = await axios.get(
       "https://api.openweathermap.org/data/2.5/weather",
