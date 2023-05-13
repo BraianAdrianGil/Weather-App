@@ -170,7 +170,33 @@ const WeatherCard = () => {
           </div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <div className="weather__btn__general__container">
+          <div className="weather__form__container">
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                value={cityInput}
+                onChange={handleChange}
+                placeholder="Ingrese una ciudad"
+                className={isDarkMode ? "dark__mode" : ""}
+              />
+              <button type="submit" className={isDarkMode ? "dark__mode" : ""}>
+                <i className="bx bx-search"></i>
+              </button>
+            </form>
+          </div>
+          <button
+            className={`btn__slider__container ${
+              isDarkMode ? "dark__mode" : " "
+            }`}
+            onClick={toggleTheme}
+          >
+            <div
+              className={`btn__slider ${isDarkMode ? "dark__mode" : ""}`}
+              onClick={toggleTheme}
+            ></div>
+          </button>
+        </div>
       )}
     </>
   );
