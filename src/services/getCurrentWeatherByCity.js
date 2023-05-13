@@ -8,7 +8,7 @@ export const getCurrentWeatherByCity = async (city) => {
   try {
     const params = {
       q: city,
-      appid: "283f32beb215c0db85bfd23784a36be3",
+      appid: import.meta.env.VITE_OPENWEATHER_API_KEY,
     };
 
     const res = await axios.get(

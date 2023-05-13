@@ -47,6 +47,7 @@
     font-family: 'Lato', sans-serif;
     outline: none;
     background-color: #E0E0E080;
+    color: black;
 }
 .weather__form__container form input.dark__mode{
     background: linear-gradient(rgba(0, 0, 0, 0.266), rgba(0, 0, 0, 0.266));
@@ -62,6 +63,7 @@
     border: none;
     border-left: 1px solid gray;
     cursor:pointer;
+    color: black;
 }
 .weather__form__container form button.dark__mode{
     color: white;
