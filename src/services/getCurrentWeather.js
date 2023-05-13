@@ -9,7 +9,7 @@ export const getCurrentWeather = async (latitude, longitude) => {
     const params = {
       lat: latitude,
       lon: longitude,
-      appid: import.meta.env.VITE_OPENWEATHER_API_KEY,
+      appid: "ddf8847a11fbf86481b0b7324b6d2400",
     };
 
     const res = await axios.get(
